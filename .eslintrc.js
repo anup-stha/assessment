@@ -3,25 +3,27 @@ module.exports = {
     browser: true,
     es2021: true,
     jest: true,
-    node: true,
+    node: true
   },
   extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:prettier/recommended",
+    'eslint:recommended',
+    'next',
+    'next/core-web-vitals',
+    'google',
+    'plugin:@typescript-eslint/recommended',
+    'prettier'
   ],
-
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
-    ecmaVersion: "latest",
-    sourceType: "module",
+    ecmaVersion: 6,
+    sourceType: 'module'
   },
-  plugins: ["react", "prettier"],
+  plugins: ['react', 'prettier', '@typescript-eslint'],
   rules: {
-    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
-    "react/react-in-jsx-scope": "off",
-    "require-jsdoc": "off",
-  },
+    'react/react-in-jsx-scope': 'off',
+    'require-jsdoc': 'off',
+    'react-hooks/exhaustive-deps': 'off'
+  }
 };
