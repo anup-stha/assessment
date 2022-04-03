@@ -5,7 +5,7 @@ import { Dispatch, SetStateAction, useEffect } from 'react';
 export interface FilterValues {
   name: string;
   status: string;
-  signal: string[];
+  signal: string[] | string;
   source?: string;
 }
 
