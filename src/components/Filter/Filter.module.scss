@@ -1,0 +1,71 @@
+.filter {
+  &_background {
+    background: #fafafa;
+    border: 1px solid #aab0be;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    padding: 2rem 1.5rem;
+  }
+
+  &_heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    color: #121416;
+    padding-bottom: 1rem;
+  }
+
+  &_title {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #111111;
+    padding-bottom: 0.8rem;
+    padding-top: 0.8rem;
+  }
+
+  &_status_signal_container {
+    display: flex;
+    align-items: start;
+    gap: 4rem;
+  }
+
+  &_radio {
+    &_container {
+      display: flex;
+      align-items: center;
+      padding-bottom: 0.6rem;
+    }
+
+    &_label {
+      font-weight: 400;
+      font-size: 0.75rem;
+      color: #6a6767;
+      padding-left: 0.8rem;
+      cursor: pointer;
+
+      &:hover {
+        color: #282727;
+      }
+    }
+
+    &:checked + &_label {
+      font-weight: 700;
+      font-size: 0.75rem;
+      color: #0f60da;
+    }
+  }
+
+  &_input {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    padding: 0.75rem 2rem 0.75rem 1.5rem;
+    width: 100%;
+
+    &::placeholder {
+      color: #777777;
+      font-size: 1rem;
+    }
+  }
+}
