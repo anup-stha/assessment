@@ -1,7 +1,7 @@
-import { NextPage } from 'next';
+import UserPage from 'modules/users/pages/UserPage';
 
-const Home: NextPage = () => {
-  return <div>Initial Setup</div>;
+const Home = () => {
+  return <UserPage />;
 };
 
 export default Home;

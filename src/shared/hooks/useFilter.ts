@@ -27,7 +27,7 @@ export const useFilter = ({ userList, filter }: useFilterProps) => {
     console.log(filter.signal);
 
     const signal =
-      filter.signal && filter.signal.length !== 0
+      filter.signal && filter.signal.length !== 0 && Array.isArray(filter.signal)
         ? filter.signal.some((signal) => signalHash[user.signal] === signal)
         : true;
 
